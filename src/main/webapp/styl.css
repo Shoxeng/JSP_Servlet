@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+html {
+    background: #ebcbf4;
+}
+
+#menu input[type="checkbox"]{
+    display: none;
+}
+
+#menu label {
+    display:none;
+}
+
+#kontener {
+    width: 90%;
+    margin: auto;
+    font-family: "Tahoma","sans-serif";
+    font-size: 1rem;
+}
+
+#naglowek {
+    width: 100%;
+    background: #983628;
+    text-align: center;
+    font-size: 2.5rem;
+    height: 150px;
+}
+
+#naglowek h1 {
+    margin: 0;
+    padding-top: 1rem;
+}
+
+#srodek {
+    margin-top: 1rem;
+}
+
+#stopka {
+    background: #888;
+    color: white;
+    padding: 0.2rem;
+    text-align: center;
+}
+
+#menu {
+    width: 10rem;
+    float: left;
+    margin-bottom: 1rem;
+}
+
+#menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+#menu li {
+    list-style: none;
+    font-size: 90%;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #e2aedd;
+    background: #2e0e02;
+    padding: 0.3rem;
+    margin-bottom: 0.5rem;
+    display: block;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+}
+
+#menu a:hover {
+    color: #2e0e02;
+    background: #e2aedd;
+}
+
+#stopka {
+    clear: both;
+    background: #983628;
+    color: white;
+    padding: 0.2rem;
+    text-align: center;
+}
+
+#newsy {
+    background: #e2aedd;
+    padding 0 0.3rem 0.3rem;
+}
+
+#tresc {
+    background: #e2aedd;
+    text-align: justify;
+    padding: 0.5rem;
+    margin-left: 11rem;
+    margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 640px){
+    #menu {
+        width: 100%;
+        padding: 0;
+    }
+
+    #tresc {
+        margin-left: 0;
+        clear: both;
+    }
+
+    #newsy {
+        text-align: center;
+    }
+
+    #kontener {
+        min-width: 320px;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    #menu label{
+        text-align: center;
+        display: block;
+        color: #e2aedd;
+        background: #2e0e02;
+        padding 0 0.3rem 0.3rem;
+        margin-bottom: 0.5rem;
+        transition: all 0.5s ease-in-out;
+    }
+
+    #menu label:hover {
+        color: #2e0e02;
+        background: #e2aedd;
+    }
+
+    #menu ul{
+        display: none;
+    }
+
+    #menu input[type="checkbox"]:checked ~ ul{
+        display:block;
+    }
+}
